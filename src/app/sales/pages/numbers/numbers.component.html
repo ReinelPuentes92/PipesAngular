@@ -1,0 +1,28 @@
+<div class="text-layout">
+    <h1>Number Pipes</h1>
+    <p>
+        Type of formats number personalize with Pipes
+    </p>
+</div>
+
+<div class="p-grid">
+    <div class="p-col-4">
+        <p-card header="Decimal Pipe" subheader="With decimals">
+            <i class="pi pi-dollar"></i>
+            {{numberExample | number:'1.2-2'}}
+        </p-card>
+    </div>
+
+    <div class="p-col-4">
+        <p-card header="Currency Pipe" subheader="With Currency">            
+            {{(numberExample + 1200000) | currency:'COL ':'symbol-narrow':'1.0-4'}}
+        </p-card>
+    </div>
+
+    <div class="p-col-4">
+        <p-card header="Porcentage Pipe" subheader="With Porcentage">            
+            {{percentage | percent:'2.2-2'}}
+        </p-card>
+    </div>
+
+</div>

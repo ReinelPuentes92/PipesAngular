@@ -1,0 +1,81 @@
+<div class="text-layout">
+    <h1>Basic Pipes</h1>
+    <p>
+        Pipes Includes Angular - Usually module Common
+    </p>
+</div>
+
+<div class="p-grid">
+    <div class="p-col-4">
+       <p-card header="Uppercase" [subheader]="nameUpper | uppercase">
+          {{nameUpper | uppercase}} 
+       </p-card>
+    </div>
+
+    <div class="p-col-4">
+        <p-card header="Lowercase" [subheader]="nameLower | lowercase">
+            {{nameLower | lowercase}} 
+         </p-card>
+    </div>
+    
+    <div class="p-col-4">
+        <p-card header="TitleCase" [subheader]="nameComple | titlecase">
+            {{nameComple | titlecase}} 
+         </p-card>
+    </div>     
+     
+</div>
+
+<div class="text-layout">
+    <h1>Date | Pipe</h1>
+    <p>
+        Pipes type Date
+    </p>
+</div>
+
+<div class="p-grid">
+
+    <div class="p-col-6">
+        <p-card>
+            <ul>
+                <li>Date</li>
+                <li>Date | date</li>
+                <li>Date | date:'short'</li>
+                <li>Date | date:'medium'</li>
+                <li>Date | date:'fullDate'</li>
+                <li>Date | date:'Month'</li>
+                <li>Date | date:'long'</li>
+                <li>Date | date:'Era'</li>
+                <li>Date | date:'Personalized'</li>
+            </ul>    
+            
+            <hr>
+            <ul>
+                <li>Date | date:'long':'time-zone'</li>
+                <li>Date | date:'long':'time-zone':'language'</li>
+            </ul>
+        </p-card>
+    </div>
+
+    <div class="p-col-6">
+        <p-card>
+            <ul>
+                <li>{{date}}</li>
+                <li>{{date | date}}</li>
+                <li>{{date | date:'short'}}</li>
+                <li>{{date | date:'medium'}}</li>
+                <li>{{date | date:'fullDate'}}</li>
+                <li>{{date | date:'MMMM'}}</li>
+                <li>{{date | date:'long'}}</li>
+                <li>{{date | date:'GGGG'}}</li>
+                <li>{{date | date:'YYYY-MM-dd, ww'}}</li>
+            </ul>
+
+            <hr>
+            <ul>
+                <li>{{date | date:'long':'GMT+1'}}</li>
+                <li>{{date | date:'long':'GMT+1':'de'}}</li>
+            </ul>
+        </p-card>
+    </div>
+</div>
