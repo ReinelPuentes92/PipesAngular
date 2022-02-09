@@ -8,12 +8,20 @@ import { NoCommonsComponent } from './pages/no-commons/no-commons.component';
 import { BasicsComponent } from './pages/basics/basics.component';
 import { OrderComponent } from './pages/order/order.component';
 
+import { FlyPipe } from './pipes/fly.pipe';
+import { UppercasePipe } from './pipes/uppercase.pipe';
+import { OrderPipe } from './pipes/order.pipe';
+
+
 @NgModule({
   declarations: [
     NumbersComponent,
+    FlyPipe,
+    UppercasePipe,
     NoCommonsComponent,
     BasicsComponent,
-    OrderComponent
+    OrderComponent,
+    OrderPipe
   ],
   exports: [
     NumbersComponent,
